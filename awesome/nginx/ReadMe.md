@@ -11,8 +11,3 @@
 ## struct
 
 ![avatar](/static/image/nginx/nginx.png)
-
-## issue list
-
-1. SSL/TLS 没学
-2. 缓存没学

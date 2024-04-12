@@ -1,4 +1,4 @@
-## dimensions
+## core-point
 
 1. 负载均衡
 2. 健康检查
@@ -42,7 +42,7 @@
 3. Kong
 
    - 性能: 基于 OpenResty 构建
-   - API 管理: 提供了一个中央 API 管理平台，用于注册、维护和监控 API
+   - API 管理: 是 openresty 的一个 api 网关应用, 提供了中央 API 管理平台，用于注册、维护和监控 API
    - 插件: openresty
    - 扩展性: 可以通过自定义插件、脚本和模块来扩展和定制 API 网关
 

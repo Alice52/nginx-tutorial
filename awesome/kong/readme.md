@@ -10,10 +10,6 @@
    - Mashape 公司开源, 可以执行 Lua 脚本(OpenResty 已经包含了 lua-nginx-module)的应用
    - 核心: **API 网关和微服务管理平台**: **`数据库抽象|路由和插件管理|插件机制可以注入到请求生命周期的任何位置`**
    - 目的: 帮助开发者构建/管理/扩展现代化的微服务架构和分布式系统
-   - nginx | openresty | kong
-     1. nginx 是模块化设计的反向代理软件, c 语言开发
-     2. openresty 是以 nginx 为核心的 web 开发平台, 可以解析执行 lua 脚本
-     3. kong 是 openresty 的一个应用, 是一个 api 网关, 具有 api 管理和请求代理的功能
 
 2. feature
 
@@ -152,23 +148,22 @@
 ## reference
 
 1. https://blog.csdn.net/zz18435842675/article/details/118733464
-2. https://mp.weixin.qq.com/s?__biz=MzAwMjI0ODk0NA==&mid=2451964472&idx=1&sn=eb05f7d5af78b6635a83a55377ed09d0&chksm=8d1ffba7ba6872b1207a93cf23a9370b49eefb1533b7115d906828e1162bee578a26dfbff0f6&scene=178&cur_album_id=1510122164576911361#rd
+2. [网关选型](https://mp.weixin.qq.com/s?__biz=MzAwMjI0ODk0NA==&mid=2451964472&idx=1&sn=eb05f7d5af78b6635a83a55377ed09d0&chksm=8d1ffba7ba6872b1207a93cf23a9370b49eefb1533b7115d906828e1162bee578a26dfbff0f6&scene=178&cur_album_id=1510122164576911361#rd)
 3. https://mp.weixin.qq.com/s/78-CJIqyptnzliPdyQbfNg
 4. https://developer.aliyun.com/article/1036809#slide-8
 5. https://mp.weixin.qq.com/s?__biz=MzkxNTE3NjQ3MA==&mid=2247496839&idx=1&sn=5d3abf14d91fd9eea8268bd6278ca29c
 6. https://mp.weixin.qq.com/s/O2N2ucFLn3vF67RK_aP0UA
 7. https://zhuanlan.zhihu.com/p/586308764
 8. https://blog.csdn.net/lgxzzz/article/details/121683302
-9. https://blog.csdn.net/why_still_confused/article/details/89244200
-10. https://blog.csdn.net/zz18435842675/article/details/122449579
-11. https://cloud.tencent.com/developer/article/2301049
-12. https://blog.csdn.net/tao_627/article/details/79298904
-13. ***
-14. https://zhuanlan.zhihu.com/p/577842078
-15. https://www.jianshu.com/p/b44400618c69
-16. https://github.com/micro-services-roadmap/roadmap/issues/5
-17. https://blog.csdn.net/lgxzzz/article/details/121683302
-18. https://cloud.tencent.com/developer/article/2301049
-19. https://mp.weixin.qq.com/s/O2N2ucFLn3vF67RK_aP0UA
-20. https://blog.csdn.net/zz18435842675/article/details/122449579
-21. [kong logstash](https://blog.csdn.net/why_still_confused/article/details/89244200)
+9. https://blog.csdn.net/zz18435842675/article/details/122449579
+10. https://cloud.tencent.com/developer/article/2301049
+11. https://blog.csdn.net/tao_627/article/details/79298904
+12. ***
+13. https://zhuanlan.zhihu.com/p/577842078
+14. https://www.jianshu.com/p/b44400618c69
+15. https://github.com/micro-services-roadmap/roadmap/issues/5
+16. [kong logstash](https://blog.csdn.net/why_still_confused/article/details/89244200)
+17. https://blog.csdn.net/qq_28410283/article/details/122615304
+18. https://blog.csdn.net/mz135135/article/details/122273839
+19. https://www.jianshu.com/p/2a63c6d0c09d
+20. https://zhuanlan.zhihu.com/p/663243536
