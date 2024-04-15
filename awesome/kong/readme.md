@@ -48,12 +48,14 @@
    - service: 上游服务的抽象, 通过 Kong 匹配到相应的请求要转发的地方(server)
    - upstream: 上游服务, 实现负载
    - target: upstream 负载下的每个节点(物理服务 | ip + port 的抽象)
-   - consumer: 代表用户或应用(核心原则是可以为其添加插件)
+   - consumer: 代表用户或应用(**核心原则是可以为其添加插件**)
    - **plugins**
 
 5. 请求解析过程
 
    - `Route >> Service >> Upstream >> Target`
+
+   ![avatar](/static/image/kong/kong-req-flow.jpg)
 
 6. [部署方式](https://tech.aufomm.com/introduction-of-different-kong-deployment-methods-with-docker/#DBless-Deployment)
 
