@@ -47,3 +47,16 @@
    - 扩展性: 可以通过自定义插件、脚本和模块来扩展和定制 API 网关
 
    ![avatar](/static/image/nginx/kong-framework.jpg)
+
+4. [kong & nginx 性能对比](https://blog.csdn.net/zz18435842675/article/details/122669030)
+
+   - 两种框架压测时, qps 跟 cpu 核数的提升成正比, 与内存的影响较小(注意带宽): kong 和 nginx 性能差不多(稍差一丝)
+     1. `nginx raw qps: 2c4g + 3.1w`
+     2. `kong raw qps: 2c4g + 3w`
+     3. `nginx proxy qps: 2c4g + 1.3w`
+     4. `kong proxy qps: 2c4g + 1.2w`
+   - xx
+   - kong 架构代理: qps 最高的配置规格为 4 核 2G, qps 大约在 1.2w 左右波动
+   - **kong 架构+lua 业务+file-log 插件**: qps 最高的配置规格为 4 核 2G, qps 大约在 9000 左右波动
+   - **nginx 架构+lua 业务+nginx 反向代理**: qps 最高的配置规格为 4 核 2G, qps 大约在 1.3w 左右波动
+   - nginx 架构+lua 业务: qps 最高的配置规格为 4 核 2G, qps 大约在 3w 左右波动

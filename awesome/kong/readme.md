@@ -145,6 +145,20 @@
 
 4. [kong oneid plugin with aacs](https://github.com/micro-services-roadmap/kong/tree/master/v3.5.0/plugins/oneid)
 
+   - 是启动一个新的进程, attach 到 kong 进行执行
+   - sample
+
+     ```yaml
+     # 大小写敏感
+     KONG_PLUGINS: 'bundled,go-hello,oneid'
+     KONG_PLUGINSERVER_NAMES: go-hello,oneid
+     KONG_PLUGINSERVER_GO_HELLO_START_CMD: go-hello -kong-prefix /usr/local/kong
+     KONG_PLUGINSERVER_GO_HELLO_SOCKET: /usr/local/kong/go-hello.socket
+     KONG_PLUGINSERVER_GO_HELLO_QUERY_CMD: go-hello -dump -kong-prefix /usr/local/kong
+
+     <!-- config oneid -->
+     ```
+
 ---
 
 ## reference
